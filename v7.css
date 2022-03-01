@@ -1,0 +1,167 @@
+
+	img{border: 5px solid black;}
+	p{font-size:20px;color:#fffefc;}
+	h1{
+		color:#fffefc;
+		text-align:center
+	}
+	h3{
+		color:#fffefc;
+		text-align:center
+	}
+	h2{
+		color:#fffefc;
+		text-align:center;
+	}
+	
+	.gardar{font-size:15px; text-align:center; margin:1px;}
+	.header{grid-area:header; border: 5px solid black; background-color:#2b2b2b;}
+	.sideheader{grid-area:sideheader; border: 5px solid black; background-color:#2b2b2b;}
+	.sidebar1{grid-area:sidebar1; border: 5px solid black; background-color:#2b2b2b;}
+	.sidebar2{grid-area:sidebar2; border: 5px solid black; background-color:#2b2b2b;}
+	.main{grid-area:main; border: 5px solid black; background-color:#2b2b2b;}
+	.footer{grid-area:footer; border: 5px solid black; background-color:#2b2b2b; padding:auto; text-align:center;}
+	.gridcontainer{
+		display:grid;
+		grid-template-areas:
+		'header'
+		'sideheader'
+		'main'
+		'sidebar1'
+		'sidebar2'
+		'footer';
+		grid-template-columns:1fr;
+		grid-template-rows:auto 70px auto auto auto auto;
+	}
+	.img{
+		grid-area:img;
+		width:90%;
+		height:auto;
+		margin-left:auto;
+		margin-right:auto;
+	}
+@media only screen and (min-width: 37.5em) {
+	.header{grid-area:header; border: 5px solid;}
+	.sideheader{grid-area:sideheader; border: 5px solid;}
+	.sidebar1{grid-area:sidebar1; border: 5px solid; margin-right:15px;}
+	.sidebar2{grid-area:sidebar2; border: 5px solid; margin-left:15px;}
+	.main{grid-area:main; border: 5px solid; margin:15px;}
+	.footer{grid-area:footer; border: 5px solid;}
+	.gridcontainer{
+		display:grid;
+		grid-template-areas:
+		'header header header'
+		'sideheader sideheader sideheader'
+		'sidebar1 main sidebar2'
+		'footer footer footer';
+		grid-template-columns:1fr 8fr 1fr;
+		grid-template-rows:auto 70px 13.25fr 1fr;
+	}
+	.img{
+		grid-area:img;
+		width:90%;
+		height:auto;
+	}
+	.text{
+		grid-area:text;
+		text-align:center;
+	}
+	.text2{
+		grid-area:text2;
+		text-align:center;
+		border: 1px solid black;
+	}
+	.main{
+		display:grid;
+		grid-template-areas:
+		'text text'
+		'img img'
+		'text2 text2';
+		grid-template-rows:1fr 0.25fr 3fr;
+		grid-template-columns:2.25fr 1fr;
+	}
+	
+}
+@media only screen and (min-width: 48em) {
+	.header{grid-area:header; border: 5px solid;}
+	.sideheader{grid-area:sideheader; border: 5px solid;}
+	.sidebar1{grid-area:sidebar1; border: 5px solid;}
+	.sidebar2{grid-area:sidebar2; border: 5px solid;}
+	.main{grid-area:main; border: 5px solid; margin:15px;}
+	.footer{grid-area:footer; border: 5px solid;}
+	.gridcontainer{
+		display:grid;
+		grid-template-areas:
+		'header header'
+		'sideheader sideheader'
+		'sidebar1 sidebar2'
+		'main sidebar2'
+		'footer footer';
+		grid-template-columns:4fr 1fr;
+		grid-template-rows:auto 70px 4fr auto 0.5fr;
+	}
+	.img{
+		grid-area:img;
+		margin:15px;
+		width:80%;
+		height:auto;
+	}
+	.text{
+		grid-area:text;
+		text-align:center;
+	}
+	.text2{
+		grid-area:text2;
+		text-align:center;
+		border: 1px solid black;
+	}
+	.main{
+		display:grid;
+		grid-template-areas:
+		'text text2'
+		'text text2'
+		'img text2';
+		grid-template-rows:1fr 0.25fr 1fr;
+		grid-template-columns:1fr 2.25fr;
+	}
+}
+@media only screen and (min-width: 60em) {
+	.header{grid-area:header; border: 5px solid;}
+	.sideheader{grid-area:sideheader; border: 5px solid;}
+	.sidebar1{grid-area:sidebar1; border: 5px solid; margin-right:10px;}
+	.sidebar2{grid-area:sidebar2; border: 5px solid; margin-left:10px;}
+	.main{grid-area:main; border: 5px solid; margin-right:15px; margin-left:15px;}
+	.footer{grid-area:footer; border: 5px solid;}
+	.gridcontainer{
+		display:grid;
+		grid-template-areas:
+		'sideheader header header header'
+		'sidebar1 main main sidebar2'
+		'footer footer footer footer';
+		grid-template-columns:260px 350px auto 270px;
+		grid-template-rows:auto auto 70px;
+	}
+	.img{
+		grid-area:img;
+		width:auto;
+		height:auto;
+	}
+	.text{
+		grid-area:text;
+		text-align:center;
+	}
+	.text2{
+		grid-area:text2;
+		text-align:center;
+		border: 1px solid black;
+	}
+	.main{
+		display:grid;
+		grid-template-areas:
+		'text text img'
+		'text2 text2 text2';
+		grid-template-columns:1fr 0.25fr 1fr;
+		grid-template-rows:0.75fr 2fr;
+	}
+	
+}
